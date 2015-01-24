@@ -1955,7 +1955,7 @@ prx.types.ios7_slider = {
 
 			Draggable.create('#'+_id+' .slider-button', {
 				type: 'x',
-				bounds: { left: $('#'+_id).offset().left - (_dims.height/2), width: parseInt(_dims.width) + parseInt(_dims.height), top: 0, height: 0 },
+				bounds: { left: -(_dims.height/2), width: parseInt(_dims.width) + parseInt(_dims.height), top: 0, height: 0 },
 				onDragStart: function(){
 					$(this.target).parents('.box').each(function() {
             			if(typeof(prx.scrollable._scrollables[this.id + '-inner']) != "undefined") {

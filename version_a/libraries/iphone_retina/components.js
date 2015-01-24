@@ -2966,7 +2966,7 @@ prx.types.slider_retina = {
 
 				Draggable.create('#'+_id+' .slider-button', {
 					type: 'y',
-					bounds: { top: $('#'+_id).position().top - (item.sliderSize/2), height: parseInt(_dims.height) + parseInt(item.sliderSize), left: 0, width: 0 },
+					bounds: { top: -(item.sliderSize/2), height: parseInt(_dims.height) + parseInt(item.sliderSize), left: 0, width: 0 },
 					onDragStart: function(){
 						$(this.target).parents('.box').each(function() {
 	            			if(typeof(prx.scrollable._scrollables[this.id + '-inner']) != "undefined") {
@@ -3040,7 +3040,7 @@ prx.types.slider_retina = {
 			} else {
 				Draggable.create('#'+_id+' .slider-button', {
 					type: 'x',
-					bounds: { left: $('#'+_id).offset().left - (item.sliderSize/2), width: parseInt(_dims.width) + parseInt(item.sliderSize), top: 0, height: 0 },
+					bounds: { left: -(item.sliderSize/2), width: parseInt(_dims.width) + parseInt(item.sliderSize), top: 0, height: 0 },
 					onDragStart: function(){
 						$(this.target).parents('.box').each(function() {
 	            			if(typeof(prx.scrollable._scrollables[this.id + '-inner']) != "undefined") {
